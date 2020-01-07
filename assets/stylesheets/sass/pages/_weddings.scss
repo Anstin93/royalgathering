@@ -1,0 +1,111 @@
+// Wedding Banner Section
+#wedding-banner {
+  //   margin-top: 10vh;
+  //   height: 90vh;
+  background-image: url(/assets/images/wedding/wedding-image.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  height: 100vh;
+  div {
+    padding: 1em;
+  }
+}
+
+// About Us Section
+#wedding-events-list {
+  height: 100vh;
+  margin-bottom: 2em;
+
+  ul {
+    list-style-type: none;
+    line-height: 2em;
+    margin: 1em 0;
+    padding: 0;
+  }
+
+  .wedding-list-divider {
+    width: 50%;
+    margin: 0;
+    padding: 0;
+  }
+
+  @media (min-width: 768px) {
+    margin-bottom: 5em;
+  }
+}
+
+// Wedding First Section
+#wedding-first {
+  text-align: center;
+
+  .wedding-first-img {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 2em;
+  }
+
+  @media (min-width: 768px) {
+    height: 100vh;
+    margin-bottom: 5em;
+  }
+}
+
+// Wedding Second Section
+#wedding-second {
+  text-align: center;
+
+  .wedding-second-img {
+    width: 100%;
+    max-width: 350px;
+    max-height: 250px;
+    margin-bottom: 2em;
+  }
+
+  @media (min-width: 768px) {
+    height: 100vh;
+    margin-bottom: 5em;
+  }
+}
+
+// Wedding Third Section
+#wedding-third {
+  text-align: center;
+  // height: fit-content;
+
+  .wedding-second-img {
+    width: 100%;
+    // max-width: 350px;
+    margin-bottom: 2em;
+  }
+
+  @media (min-width: 768px) {
+    height: 100vh;
+  }
+}
+
+// Wedding Fourth Section
+#wedding-fourth {
+  height: 100vh;
+}
+
+// Wedding Fifth Section
+#wedding-fifth {
+  height: 100vh;
+  text-align: center;
+
+}
+
+// Wedding Sixth Section
+#wedding-sixth {
+  height: fit-content;
+
+  @media (min-width: 768px) {
+    height: 100vh;
+  }
+}
+
+// Wedding Seventh Section
+#wedding-seventh {
+  height: 100vh;
+}

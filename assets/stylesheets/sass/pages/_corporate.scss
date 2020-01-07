@@ -1,0 +1,193 @@
+.corporate {
+  background: #fff;
+}
+
+// Corporate Banner Section
+#corporate-banner {
+  background-image: url("/assets/images/corporate/corporate-events-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 100vh;
+
+  h2 {
+    width: 10em;
+  }
+
+  @media (min-width: 768px) {
+    p {
+      width: 65%;
+    }
+  }
+}
+
+// Employee Welfare
+#employee-welfare {
+  height: 100vh;
+  position: relative;
+
+  &:before {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    content: "";
+    background-color: #1a0e32;
+  }
+
+  img {
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    color: #212529;
+  }
+
+  p {
+    color: #212529;
+  }
+
+  @media (min-width: 768px) {
+    img {
+      width: 750px;
+      height: 450px;
+    }
+
+    h2 {
+      width: 20em;
+    }
+
+    p {
+      width: 70%;
+    }
+  }
+}
+
+// Trade Show Section
+#trade-show {
+  height: 100vh;
+  position: relative;
+  margin-top: 100px;
+
+  &:before {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    content: "";
+    background-color: #1a0e32;
+  }
+
+  .trade-text-box {
+    margin:  0 2em;
+}
+
+  h2 {
+    color: #212529;
+    text-align: center;
+  }
+
+  p {
+    color: #212529;
+    text-align: center;
+  }
+
+  @media (min-width: 768px) {
+    &:before {
+      position: absolute;
+      z-index: 0;
+      top: 0;
+      left: 0;
+      width: 30%;
+      height: 100%;
+      content: "";
+      background-color: #1a0e32;
+    }
+  }
+}
+
+// Meeting & Training
+#training {
+  background-color: $primary-color;
+  height: 100vh;
+
+  img {
+    width: 100%;
+    height: 50%;
+  }
+
+  @media (min-width: 768px) {
+    img {
+      width: auto;
+      max-width: 700px;
+      height: auto;
+    }
+
+    h2 {
+      width: 20em;
+    }
+
+    p {
+      width: 75%;
+    }
+  }
+}
+
+// Employee Fitness Section
+#fitness {
+  position: relative;
+  height: 100vh;
+
+  &:before {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 40%;
+    content: "";
+    background-color: #1a0e32;
+  }
+
+     img {
+        width: 350px;
+        height: 256px;
+      }
+
+.fitness-text-box {
+    padding: 0 1em;
+}
+
+  h2 {
+    color: #212529;
+    text-align: center;
+  }
+
+  p {
+    color: #212529;
+    text-align: center;
+  }
+
+  @media (min-width: 768px) {
+    &:before {
+      position: absolute;
+      z-index: 0;
+      top: 0;
+      right: 0;
+      width: 30%;
+      height: 100%;
+      content: "";
+      background-color: #1a0e32;
+    }
+
+    img {
+      width: 500px;
+      height: 500px;
+    }
+  }
+}

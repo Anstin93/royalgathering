@@ -1,0 +1,58 @@
+@font-face {
+  font-family: "indulge-script-regular";
+  src: url(/assets/fonts/Indulge-Script/indulge-script.otf);
+}
+
+.title {
+  font-family: $title-font;
+  font-size: 3rem;
+  padding-bottom: 10px;
+  background: linear-gradient(
+    to right,
+    #914e3d 0%,
+    #b27362 9%,
+    #fac4b3 30%,
+    #fab5a5 50%,
+    #946051 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
+.paragraph {
+  font-family: $para-font;
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 400;
+  text-align: center;
+}
+
+.corporate-title {
+  font-family: $para-font;
+  font-size: 2rem;
+  color: #fff;
+  border-bottom: 8px solid;
+  border-image-source: linear-gradient(
+    to right,
+    #914e3d 0%,
+    #b27362 9%,
+    #fac4b3 30%,
+    #fab5a5 50%,
+    #946051 100%
+  );
+  border-image-slice: 1;
+  margin: 20px auto;
+}
+
+.corporate-para {
+  font-family: $para-font;
+  font-size: 1rem;
+  color: #fff;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    font-size: 1.2rem;
+  }
+}

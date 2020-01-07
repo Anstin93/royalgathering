@@ -1,0 +1,29 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: $primary-color;
+  margin: 0;
+}
+
+.image-grid {
+  background: #fff;
+}
+
+
+.floral-illustration {
+  width: 25%;
+}
+
+.wedding-frame {
+  width: 15%;
+}
+
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

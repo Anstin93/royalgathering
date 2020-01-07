@@ -1,0 +1,16 @@
+.navbar {
+  font-family: $para-font;
+  opacity: 0.9;
+
+  .navbar-nav .nav-item .nav-link {
+    font-size: 0.8rem;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+.dropdown .dropdown-menu a:hover {
+  background: $primary-color;
+}
