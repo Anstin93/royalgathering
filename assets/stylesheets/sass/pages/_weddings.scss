@@ -1,20 +1,36 @@
 // Wedding Banner Section
 #wedding-banner {
-  //   margin-top: 10vh;
-  //   height: 90vh;
-  background-image: url(/assets/images/wedding/wedding-image.png);
+  background: linear-gradient(rgba(26, 14, 50, 0.7), rgba(26, 14, 50, 0.7)),
+    url(/assets/images/wedding/wedding-image.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
   height: 100vh;
-  div {
-    padding: 1em;
+
+  .banner-inner {
+    height: 90vh;
+    margin-top: 10vh;
+  }
+
+  .title {
+    margin: 0;
+  }
+
+  .paragraph {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 768px) {
+    .paragraph {
+      width: 70%;
+    }
   }
 }
 
-// About Us Section
+// Wedding Events List Section
 #wedding-events-list {
-  height: 100vh;
+  height: fit-content;
   margin-bottom: 2em;
 
   ul {
@@ -24,88 +40,97 @@
     padding: 0;
   }
 
-  .wedding-list-divider {
-    width: 50%;
-    margin: 0;
-    padding: 0;
+  li {
+    margin-top: 1em;
+  }
+
+  span {
+    @include text-gradient;
+    font-size: 2rem;
+    display: inline-block;
+    vertical-align: sub;
   }
 
   @media (min-width: 768px) {
     margin-bottom: 5em;
   }
+}
+
+// Service
+.service {
+  @include para-width;
+  padding-bottom: 3em;
 }
 
 // Wedding First Section
 #wedding-first {
-  text-align: center;
-
-  .wedding-first-img {
-    width: 100%;
-    max-width: 400px;
-    margin-bottom: 2em;
-  }
-
-  @media (min-width: 768px) {
-    height: 100vh;
-    margin-bottom: 5em;
-  }
+  @include quadrant-style;
 }
 
 // Wedding Second Section
 #wedding-second {
-  text-align: center;
-
-  .wedding-second-img {
-    width: 100%;
-    max-width: 350px;
-    max-height: 250px;
-    margin-bottom: 2em;
-  }
-
-  @media (min-width: 768px) {
-    height: 100vh;
-    margin-bottom: 5em;
-  }
+  @include twin-pod;
 }
 
 // Wedding Third Section
 #wedding-third {
-  text-align: center;
-  // height: fit-content;
-
-  .wedding-second-img {
-    width: 100%;
-    // max-width: 350px;
-    margin-bottom: 2em;
-  }
-
-  @media (min-width: 768px) {
-    height: 100vh;
-  }
+  @include quadrant-style;
 }
 
 // Wedding Fourth Section
 #wedding-fourth {
-  height: 100vh;
+  @include twin-pod;
+
+  img {
+    margin-top: 2em;
+
+    @media (min-width: 992px) {
+      margin-top: 0;
+    }
+  }
 }
 
 // Wedding Fifth Section
 #wedding-fifth {
-  height: 100vh;
-  text-align: center;
-
+  @include quadrant-style;
 }
 
 // Wedding Sixth Section
 #wedding-sixth {
-  height: fit-content;
-
-  @media (min-width: 768px) {
-    height: 100vh;
-  }
+  @include twin-pod;
 }
 
 // Wedding Seventh Section
 #wedding-seventh {
-  height: 100vh;
+  @include twin-pod;
+
+  img {
+    margin-top: 2em;
+
+    @media (min-width: 992px) {
+      margin-top: 0;
+    }
+  }
+}
+
+// Wedding Eighth Section
+#wedding-eighth {
+  @include quadrant-style;
+}
+
+// Wedding Ninth Section
+#wedding-ninth {
+  @include para-width;
+  margin: 5em 0;
+
+  img {
+    @include sm-screen-img;
+    display: block;
+    margin: 0 auto;
+    background-color: #fff;
+
+    @media (min-width: 768px) {
+      @include lg-screen-img;
+    }
+  }
 }

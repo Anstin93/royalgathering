@@ -7,17 +7,41 @@
   }
 }
 
-.illustration-reverse {
-  transform: rotate(-180deg);
-}
-
 .logo {
   width: 80%;
+  // width: 40%;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    width: 100%;
+  }
 }
 
 // About Us Section
 #about-us {
   height: 100vh;
+
+  .title {
+    margin: 0.5em;
+  }
+
+  @media (max-width: 992px) {
+    height: fit-content;
+
+    .title {
+      padding: 0 !important;
+    }
+
+    .about-us-textblock {
+      padding: 1em;
+    }
+
+    .about-us-box {
+      width: 100%;
+      padding: 2em 1em;
+    }
+  }
 }
 
 .about-us-box {
@@ -33,6 +57,84 @@
     list-style-type: none;
     margin-top: 1.5em;
   }
+
+  span {
+    @include text-gradient;
+    font-size: 2rem;
+    display: inline-block;
+    vertical-align: sub;
+  }
+
+  @media (max-width: 992px) {
+    height: fit-content;
+
+    .why-us-textblock {
+      padding: 1em;
+    }
+  }
+}
+
+// Our Story Section
+#our-story {
+  padding: 1em 0;
+
+  h2 {
+    margin-top: 0;
+    margin-bottom: 100px;
+  }
+
+  h3.title {
+    font-size: 1.5rem;
+    padding: 10px 0;
+    margin: 0;
+  }
+
+  .our-story-box {
+    text-align: center;
+    margin: 1em 0;
+  }
+
+  .founder-info {
+    padding: 0 22px;
+    margin: 0 auto;
+    width: fit-content;
+    position: relative;
+    border: 4px solid transparent;
+    border-radius: 20px;
+    background: $primary-color;
+    background-clip: padding-box;
+
+    &::after {
+      position: absolute;
+      top: -4px;
+      bottom: -4px;
+      left: -4px;
+      right: -4px;
+      background: linear-gradient(
+        to right,
+        #914e3d 0%,
+        #b27362 9%,
+        #fac4b3 30%,
+        #fab5a5 50%,
+        #946051 100%
+      );
+      content: "";
+      z-index: -1;
+      // border-radius: 16px;
+    }
+  }
+
+  .rounded-circle {
+    height: 150px;
+    width: 150px;
+    margin: -85px 0 0px 0;
+    display: inline-block;
+  }
+
+  p {
+    padding: 2em 1em;
+    margin-bottom: 0;
+  }
 }
 
 //  Services Section
@@ -40,16 +142,8 @@
   @extend %clearfix;
   height: fit-content;
 
-  div {
-    padding-top: 1em;
-  }
-
-  .services-content {
-    // margin-top: 5em;
-  }
-
-  .services-box {
-    // margin-bottom: 5em;
+  h2.title {
+    margin-top: 0;
   }
 
   .card {
@@ -82,17 +176,21 @@
 
   .card-title {
     font-size: 1.5rem;
-    font-family: $para-font;
+    font-family: $secondary-font;
   }
 
   .fr {
     float: right;
   }
-}
 
-@media (max-width: 1200px) {
-  #services {
-    height: auto;
+  @media (max-width: 1200px) {
+    height: fit-content;
+  }
+
+  @media (min-width: 992px) {
+    .card {
+      width: 400px !important;
+    }
   }
 }
 
@@ -102,7 +200,6 @@
 
   .details {
     margin-top: 2em;
-    // padding-left: 2em;
     p {
       color: black;
       text-align: center;
@@ -113,9 +210,12 @@
 
   .contact100-pic img {
     height: 400px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
   }
 
-  @media (min-width: 1200px) {
-    margin-top: 10em;
+  @media (max-width: 992px) {
+    height: fit-content;
   }
 }

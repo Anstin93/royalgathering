@@ -1,0 +1,113 @@
+@mixin clearfix() {
+  &::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+}
+
+@mixin text-gradient {
+  background: linear-gradient(
+    to right,
+    #914e3d 0%,
+    #b27362 9%,
+    #fac4b3 30%,
+    #fab5a5 50%,
+    #946051 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@mixin border-gradient {
+  border-image-source: linear-gradient(
+    to right,
+    #914e3d 0%,
+    #b27362 9%,
+    #fac4b3 30%,
+    #fab5a5 50%,
+    #946051 100%
+  );
+  border-image-slice: 1;
+}
+
+@mixin sm-screen-img {
+  border: 8px solid;
+  @include border-gradient;
+  padding: 15px;
+  width: 75%;
+  height: auto;
+}
+
+@mixin lg-screen-img {
+  width: auto;
+  max-width: 450px;
+}
+
+@mixin para-width {
+  p {
+    width: 70%;
+    margin: 0 auto;
+
+    @media (max-width: 768px) {
+      width: 90%;
+    }
+  }
+}
+
+@mixin quadrant-style {
+  @include para-width;
+
+  img {
+    @include sm-screen-img;
+    display: block;
+    margin: 0 auto;
+    background-color: #fff;
+
+
+    @media (min-width: 768px) {
+      @include lg-screen-img;
+    }
+  }
+
+  :nth-child(4) {
+    margin-top: 2em;
+  }
+
+  @media (min-width: 992px) {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-row-gap: 100px;
+    justify-items: center;
+    align-items: center;
+
+    :nth-child(4) {
+      margin-top: 0;
+    }
+  }
+}
+
+@mixin twin-pod {
+  @include para-width;
+  margin: 5em 0;
+
+  img {
+    @include sm-screen-img;
+    display: block;
+    margin: 0 auto;
+    background-color: #fff;
+
+    @media (min-width: 768px) {
+      @include lg-screen-img;
+    }
+  }
+
+  @media (min-width: 992px) {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-row-gap: 100px;
+    justify-items: center;
+    align-items: center;
+  }
+}

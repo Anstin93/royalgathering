@@ -3,56 +3,64 @@
   src: url(/assets/fonts/Indulge-Script/indulge-script.otf);
 }
 
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
+
+.navbar-transparent .logo-title {
+  @include text-gradient;
+  font-family: $primary-font;
+  font-size: 1.5rem;
+}
+
+.navbar .logo-title {
+  color: #1a0e32;
+  font-family: $primary-font;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
 .title {
-  font-family: $title-font;
-  font-size: 3rem;
+  @include text-gradient;
+  font-family: $primary-font;
+  font-size: 2.5rem;
   padding-bottom: 10px;
-  background: linear-gradient(
-    to right,
-    #914e3d 0%,
-    #b27362 9%,
-    #fac4b3 30%,
-    #fab5a5 50%,
-    #946051 100%
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   text-align: center;
+  line-height: 3.3rem;
 }
 
 .paragraph {
-  font-family: $para-font;
+  font-family: $secondary-font;
   font-size: 1rem;
   color: #fff;
   font-weight: 400;
   text-align: center;
+
+  @media (min-width: 1400px) {
+    font-size: 1.1rem;
+  }
 }
 
 .corporate-title {
-  font-family: $para-font;
-  font-size: 2rem;
+  font-family: $secondary-font;
+  font-size: 1.6rem;
   color: #fff;
-  border-bottom: 8px solid;
-  border-image-source: linear-gradient(
-    to right,
-    #914e3d 0%,
-    #b27362 9%,
-    #fac4b3 30%,
-    #fab5a5 50%,
-    #946051 100%
-  );
-  border-image-slice: 1;
   margin: 20px auto;
+  line-height: 3.3rem;
+
+  @media (min-width: 768px) {
+    font-size: 2rem;
+  }
+  @media (min-width: 1400px) {
+    font-size: 2.2rem;
+  }
 }
 
 .corporate-para {
-  font-family: $para-font;
+  font-family: $secondary-font;
   font-size: 1rem;
   color: #fff;
   margin: 0 auto;
 
-  @media (min-width: 768px) {
-    font-size: 1.2rem;
+  @media (min-width: 1400px) {
+    font-size: 1.1rem;
   }
 }

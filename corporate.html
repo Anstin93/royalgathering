@@ -36,12 +36,11 @@
   <link rel="stylesheet" href="assets/stylesheets/css/styles.css" />
 </head>
 <body class="corporate">
-  <div class="container-fluid">
     <!-- Navbar -->
     <nav class="navbar navbar-transparent navbar-color-on-scroll fixed-top navbar-expand-lg" color-on-scroll="100" id="sectionsNav">
       <div class="container">
         <div class="navbar-translate">
-          <a class="navbar-brand" href="index.html">
+          <a class="navbar-brand logo-title" href="index.html">
             The Royal Gathering </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
               <span class="sr-only">Toggle navigation</span>
@@ -105,10 +104,11 @@
         </div>
       </nav>
       
+    <div class="container-fluid"> 
       <!-- Corporate Banner Section -->
       <div class="row text-center justify-content-center align-items-center" id="corporate-banner">
         <div class="col">
-          <h2 class="corporate-title">Corporate Events</h2>
+          <h2 class="corporate-title"><span>Corporate Events</span></h2>
           <p class="corporate-para">
             All said about using technology for communication but the only way
             to establish a successful professional career is through human
@@ -120,16 +120,16 @@
         </div>
       </div>
       
-      <!-- Employee Welfare -->
+      <!-- Employee Welfare Section-->
       <div class="row" id="employee-welfare">
         <div class="col text-center">
           <div>
             <img
-            src="assets/images/corporate/employee-welfare-img.png"
+            src="assets/images/corporate/welfare-collage.png"
             alt=""
             class="img-fluid"
             />
-            <h2 class="corporate-title">Employee Welfare Activities Yearly Plan</h2>
+            <h2 class="corporate-title"><span>Employee Welfare Activities Yearly Plan</span></h2>
             <p class="corporate-para">
               We focus on curating a yearly plan for the corporate with respect
               to “different world days” celebrated across the globe (For eg,
@@ -147,11 +147,11 @@
       id="trade-show"
       >
       <div class="col-xs-12 col-md-6 d-flex justify-content-center">
-        <img src="assets/images/corporate/trade-show-img.png" alt="" />
+        <img src="assets/images/corporate/trade-show-collage.png" alt="" />
       </div>
       <div class="col-xs-12 col-md-6 d-flex justify-content-center">
         <div class="trade-text-box">
-          <h2 class="corporate-title">Trade Shows, Product Launch, Award Shows</h2>
+          <h2 class="corporate-title"><span>Trade Shows, Product Launch, <br> Award Shows</span></h2>
           <p class="corporate-para">
             These are major brand building events which involves a lot of
             stake holders and public at large. We ensure that all these
@@ -160,14 +160,14 @@
           </p>
         </div>
       </div>
-      </div>
+    </div>
     
-    <!-- Meeting & Training -->
+    <!-- Meeting & Training Section-->
     <div class="row" id="training">
       <div class="col text-center">
         <div>
           <img src="assets/images/corporate/meeting-img.png" alt="" />
-          <h2 class="corporate-title">Meetings And Training Programmes</h2>
+          <h2 class="corporate-title"><span>Meetings And Training Programmes</span></h2>
           <p class="corporate-para">
             The book is definitely judged by its cover when it comes to
             meetings and training programmes. Sophisticated and planned
@@ -179,21 +179,21 @@
       </div>
     </div>
     
-    <!-- Employee Fitness -->
+    <!-- Employee Fitness Section-->
     <div
     class="row d-flex justify-content-center align-items-center"
     id="fitness"
     >
     <div class="col-xs-12 col-md-6 d-flex justify-content-center order-1 order-md-2">
       <img
-      src="assets/images/corporate/employee-fitness-img.png"
+      src="assets/images/corporate/employee-fitness.jpg"
       alt=""
       class="img-fluid"
       />
     </div>
     <div class="col-xs-12 col-md-6 d-flex justify-content-center order-2 order-md-1">
       <div class="fitness-text-box">
-        <h2 class="corporate-title">Employee Fitness Activities</h2>
+        <h2 class="corporate-title"><span>Employee Fitness Activities</span></h2>
         <p class="corporate-para">
           Apart from boredom what kills a man early is lack of physical
           activity! We organize the most fun and effective fitness
@@ -204,65 +204,121 @@
       </div>
     </div>
   </div>
-
-    <!-- Container end -->
+  
+  <!-- Annual day celebrations Section-->
+  <div class="row" id="annual-day">
+    <div class="col text-center">
+      <div>
+        <img
+        src="assets/images/corporate/annual-day-collage.png"
+        alt=""
+        class="img-fluid img"
+        />
+        <h2 class="corporate-title"><span>Annual Day Celebrations</span></h2>
+        <p class="corporate-para">
+          Annual day celebrations are the best way to encourage employees to showcase their talents and skills
+          dance, music etc. We help organization to execute such activities in a successful manner. We engage
+          experts in the industry to judge such events or invite them as chief guests to motivate the talent.
+          Moreover we provide unique activity arenas so that the families attending have a gala time.
+        </p>
+      </div>
+    </div>
   </div>
   
+  <!-- Container end -->
+</div>
+
+<!-- Footer -->
+<footer class="footer" data-background-color="black">
+  <div class="container">
+    <nav class="footer float-left" id="footer-nav">
+      <ul>
+        <li>
+          <a href="index.html">
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="index.html#about-us">
+            About Us
+          </a>
+        </li>
+        <li>
+          <a href="index.html#services">
+            Services
+          </a>
+        </li>
+        <li>
+          <a href="index.html#contact-us">
+            Contact Us
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="copyright float-right" id="footer-copyright">
+      &copy;
+      <script>
+        document.write(new Date().getFullYear())
+      </script> The Royal Gathering
+    </div>
+  </div>
+</footer>
+
+
+<!-- Bootstrap 4 JS Files -->
+<script
+src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+crossorigin="anonymous"
+></script>
+<script
+src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+crossorigin="anonymous"
+></script>
+<!-- <script
+  src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+  crossorigin="anonymous"
+  ></script> -->
   
-  <!-- Bootstrap 4 JS Files -->
+  <!-- Material Kit JS Files -->
   <script
-  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-  crossorigin="anonymous"
+  src="assets/js/core/bootstrap-material-design.min.js"
+  type="text/javascript"
   ></script>
+  <script src="assets/js/plugins/moment.min.js"></script>
+  <!--	Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
   <script
-  src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-  crossorigin="anonymous"
+  src="assets/js/plugins/bootstrap-datetimepicker.js"
+  type="text/javascript"
   ></script>
-  <!-- <script
-    src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"
-    ></script> -->
-    
-    <!-- Material Kit JS Files -->
-    <script
-    src="assets/js/core/bootstrap-material-design.min.js"
-    type="text/javascript"
-    ></script>
-    <script src="assets/js/plugins/moment.min.js"></script>
-    <!--	Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
-    <script
-    src="assets/js/plugins/bootstrap-datetimepicker.js"
-    type="text/javascript"
-    ></script>
-    <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
-    <script
-    src="assets/js/plugins/nouislider.min.js"
-    type="text/javascript"
-    ></script>
-    <!--  Google Maps Plugin  -->
-    <script
-    type="text/javascript"
-    src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"
-    ></script>
-    <!-- Place this tag in your head or just before your close body tag. -->
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
-    <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
-    <script
-    src="assets/js/material-kit.js?v=2.0.6"
-    type="text/javascript"
-    ></script>
-    <script src="vendor/tilt/tilt.jquery.min.js"></script>
-    <script >
-      $('.js-tilt').tilt({
-        scale: 1.1
-      })
-    </script>
-    
-    <!-- Local JS File -->
-    <script src="assets/js/plugins/tilt.jquery.min.js"></script>
-    
-  </body>
-  </html>
+  <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+  <script
+  src="assets/js/plugins/nouislider.min.js"
+  type="text/javascript"
+  ></script>
+  <!--  Google Maps Plugin  -->
+  <script
+  type="text/javascript"
+  src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"
+  ></script>
+  <!-- Place this tag in your head or just before your close body tag. -->
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
+  <script
+  src="assets/js/material-kit.js?v=2.0.6"
+  type="text/javascript"
+  ></script>
+  <script src="vendor/tilt/tilt.jquery.min.js"></script>
+  <script >
+    $('.js-tilt').tilt({
+      scale: 1.1
+    })
+  </script>
+  
+  <!-- Local JS File -->
+  <script src="assets/js/plugins/tilt.jquery.min.js"></script>
+  
+</body>
+</html>
