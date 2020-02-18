@@ -38,6 +38,24 @@ body {
   padding: 0;
 }
 
+.para-divider {
+  width: 100px;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .para-divider {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .img-margin {
+    margin-top: 3rem !important;
+  }
+}
+
 footer {
   background-color: #1a0e32;
   color: #fff;
@@ -933,7 +951,7 @@ textarea.input100 {
   }
 }
 
-#wedding-first img {
+#wedding-first .img-box {
   border: 8px solid;
   border-image-source: linear-gradient(to right, #914e3d 0%, #b27362 9%, #fac4b3 30%, #fab5a5 50%, #946051 100%);
   border-image-slice: 1;
@@ -946,7 +964,7 @@ textarea.input100 {
 }
 
 @media (min-width: 768px) {
-  #wedding-first img {
+  #wedding-first .img-box {
     width: auto;
     max-width: 450px;
   }
@@ -988,7 +1006,7 @@ textarea.input100 {
   }
 }
 
-#wedding-second img {
+#wedding-second .img-box {
   border: 8px solid;
   border-image-source: linear-gradient(to right, #914e3d 0%, #b27362 9%, #fac4b3 30%, #fab5a5 50%, #946051 100%);
   border-image-slice: 1;
@@ -1001,7 +1019,7 @@ textarea.input100 {
 }
 
 @media (min-width: 768px) {
-  #wedding-second img {
+  #wedding-second .img-box {
     width: auto;
     max-width: 450px;
   }
@@ -1032,7 +1050,7 @@ textarea.input100 {
   }
 }
 
-#wedding-third img {
+#wedding-third .img-box {
   border: 8px solid;
   border-image-source: linear-gradient(to right, #914e3d 0%, #b27362 9%, #fac4b3 30%, #fab5a5 50%, #946051 100%);
   border-image-slice: 1;
@@ -1045,7 +1063,7 @@ textarea.input100 {
 }
 
 @media (min-width: 768px) {
-  #wedding-third img {
+  #wedding-third .img-box {
     width: auto;
     max-width: 450px;
   }
@@ -1087,7 +1105,7 @@ textarea.input100 {
   }
 }
 
-#wedding-fourth img {
+#wedding-fourth .img-box {
   border: 8px solid;
   border-image-source: linear-gradient(to right, #914e3d 0%, #b27362 9%, #fac4b3 30%, #fab5a5 50%, #946051 100%);
   border-image-slice: 1;
@@ -1100,7 +1118,7 @@ textarea.input100 {
 }
 
 @media (min-width: 768px) {
-  #wedding-fourth img {
+  #wedding-fourth .img-box {
     width: auto;
     max-width: 450px;
   }
@@ -1141,7 +1159,7 @@ textarea.input100 {
   }
 }
 
-#wedding-fifth img {
+#wedding-fifth .img-box {
   border: 8px solid;
   border-image-source: linear-gradient(to right, #914e3d 0%, #b27362 9%, #fac4b3 30%, #fab5a5 50%, #946051 100%);
   border-image-slice: 1;
@@ -1154,7 +1172,7 @@ textarea.input100 {
 }
 
 @media (min-width: 768px) {
-  #wedding-fifth img {
+  #wedding-fifth .img-box {
     width: auto;
     max-width: 450px;
   }
@@ -1196,7 +1214,7 @@ textarea.input100 {
   }
 }
 
-#wedding-sixth img {
+#wedding-sixth .img-box {
   border: 8px solid;
   border-image-source: linear-gradient(to right, #914e3d 0%, #b27362 9%, #fac4b3 30%, #fab5a5 50%, #946051 100%);
   border-image-slice: 1;
@@ -1209,7 +1227,7 @@ textarea.input100 {
 }
 
 @media (min-width: 768px) {
-  #wedding-sixth img {
+  #wedding-sixth .img-box {
     width: auto;
     max-width: 450px;
   }
@@ -1244,7 +1262,7 @@ textarea.input100 {
   }
 }
 
-#wedding-seventh img {
+#wedding-seventh .img-box {
   border: 8px solid;
   border-image-source: linear-gradient(to right, #914e3d 0%, #b27362 9%, #fac4b3 30%, #fab5a5 50%, #946051 100%);
   border-image-slice: 1;
@@ -1257,7 +1275,7 @@ textarea.input100 {
 }
 
 @media (min-width: 768px) {
-  #wedding-seventh img {
+  #wedding-seventh .img-box {
     width: auto;
     max-width: 450px;
   }
@@ -1298,7 +1316,7 @@ textarea.input100 {
   }
 }
 
-#wedding-eighth img {
+#wedding-eighth .img-box {
   border: 8px solid;
   border-image-source: linear-gradient(to right, #914e3d 0%, #b27362 9%, #fac4b3 30%, #fab5a5 50%, #946051 100%);
   border-image-slice: 1;
@@ -1311,7 +1329,7 @@ textarea.input100 {
 }
 
 @media (min-width: 768px) {
-  #wedding-eighth img {
+  #wedding-eighth .img-box {
     width: auto;
     max-width: 450px;
   }

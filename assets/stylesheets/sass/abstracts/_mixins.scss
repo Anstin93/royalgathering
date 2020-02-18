@@ -59,7 +59,7 @@
 @mixin quadrant-style {
   @include para-width;
 
-  img {
+  .img-box {
     @include sm-screen-img;
     display: block;
     margin: 0 auto;
@@ -92,7 +92,7 @@
   @include para-width;
   margin: 5em 0;
 
-  img {
+  .img-box {
     @include sm-screen-img;
     display: block;
     margin: 0 auto;
