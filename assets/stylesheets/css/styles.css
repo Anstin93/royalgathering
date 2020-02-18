@@ -757,8 +757,14 @@ textarea.input100 {
 }
 
 #our-story p {
-  padding: 2em 1em;
+  padding: 2em;
   margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  #our-story p {
+    padding: 2em 7em;
+  }
 }
 
 #services {
