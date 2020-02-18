@@ -41,6 +41,7 @@ body {
 .para-divider {
   width: 100px;
   display: block;
+  height: auto;
   margin: 0 auto;
 }
 
