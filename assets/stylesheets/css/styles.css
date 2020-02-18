@@ -73,6 +73,10 @@ footer a:hover {
   src: url(/assets/fonts/Indulge-Script/indulge-script.otf);
 }
 
+html {
+  font-size: 14px;
+}
+
 .navbar-transparent .logo-title {
   background: -webkit-gradient(linear, left top, right top, from(#914e3d), color-stop(9%, #b27362), color-stop(30%, #fac4b3), color-stop(50%, #fab5a5), to(#946051));
   background: linear-gradient(to right, #914e3d 0%, #b27362 9%, #fac4b3 30%, #fab5a5 50%, #946051 100%);
@@ -80,14 +84,14 @@ footer a:hover {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: "indulge-script-regular";
-  font-size: 1.5rem;
+  font-size: 1.7rem;
 }
 
 .navbar .logo-title {
   color: #1a0e32;
   font-family: "indulge-script-regular";
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
 }
 
 .title {
@@ -100,7 +104,19 @@ footer a:hover {
   font-size: 2.5rem;
   padding-bottom: 10px;
   text-align: center;
-  line-height: 3.3rem;
+  line-height: 3.7rem;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 2.8rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .title {
+    font-size: 2.9rem;
+  }
 }
 
 .paragraph {
@@ -111,9 +127,15 @@ footer a:hover {
   text-align: center;
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 768px) {
   .paragraph {
     font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .paragraph {
+    font-size: 1.2rem;
   }
 }
 
@@ -127,7 +149,7 @@ footer a:hover {
 
 @media (min-width: 768px) {
   .corporate-title {
-    font-size: 2rem;
+    font-size: 2.1rem;
   }
 }
 
@@ -144,9 +166,15 @@ footer a:hover {
   margin: 0 auto;
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 768px) {
   .corporate-para {
     font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .corporate-para {
+    font-size: 1.2rem;
   }
 }
 
@@ -552,13 +580,19 @@ textarea.input100 {
   }
 }
 
+/*------------------------------------------------------------------
+[ Custom styles ]*/
+.contact100-form .behind {
+  z-index: 0;
+}
+
 .navbar {
   font-family: "Open Sans", sans-serif;
   opacity: 0.9;
 }
 
-.navbar .navbar-nav .nav-item .nav-link {
-  font-size: 0.8rem;
+.navbar .navbar-nav .nav-item .nav-link, .navbar .navbar-nav .nav-item .dropdown-item {
+  font-size: 1rem;
 }
 
 .navbar a:hover {
@@ -661,7 +695,7 @@ textarea.input100 {
 }
 
 #our-story h3.title {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   padding: 10px 0;
   margin: 0;
 }
@@ -894,7 +928,7 @@ textarea.input100 {
   border-image-source: linear-gradient(to right, #914e3d 0%, #b27362 9%, #fac4b3 30%, #fab5a5 50%, #946051 100%);
   border-image-slice: 1;
   padding: 15px;
-  width: 75%;
+  width: 70%;
   height: auto;
   display: block;
   margin: 0 auto;
@@ -949,7 +983,7 @@ textarea.input100 {
   border-image-source: linear-gradient(to right, #914e3d 0%, #b27362 9%, #fac4b3 30%, #fab5a5 50%, #946051 100%);
   border-image-slice: 1;
   padding: 15px;
-  width: 75%;
+  width: 70%;
   height: auto;
   display: block;
   margin: 0 auto;
@@ -993,7 +1027,7 @@ textarea.input100 {
   border-image-source: linear-gradient(to right, #914e3d 0%, #b27362 9%, #fac4b3 30%, #fab5a5 50%, #946051 100%);
   border-image-slice: 1;
   padding: 15px;
-  width: 75%;
+  width: 70%;
   height: auto;
   display: block;
   margin: 0 auto;
@@ -1048,7 +1082,7 @@ textarea.input100 {
   border-image-source: linear-gradient(to right, #914e3d 0%, #b27362 9%, #fac4b3 30%, #fab5a5 50%, #946051 100%);
   border-image-slice: 1;
   padding: 15px;
-  width: 75%;
+  width: 70%;
   height: auto;
   display: block;
   margin: 0 auto;
@@ -1102,7 +1136,7 @@ textarea.input100 {
   border-image-source: linear-gradient(to right, #914e3d 0%, #b27362 9%, #fac4b3 30%, #fab5a5 50%, #946051 100%);
   border-image-slice: 1;
   padding: 15px;
-  width: 75%;
+  width: 70%;
   height: auto;
   display: block;
   margin: 0 auto;
@@ -1157,7 +1191,7 @@ textarea.input100 {
   border-image-source: linear-gradient(to right, #914e3d 0%, #b27362 9%, #fac4b3 30%, #fab5a5 50%, #946051 100%);
   border-image-slice: 1;
   padding: 15px;
-  width: 75%;
+  width: 70%;
   height: auto;
   display: block;
   margin: 0 auto;
@@ -1205,7 +1239,7 @@ textarea.input100 {
   border-image-source: linear-gradient(to right, #914e3d 0%, #b27362 9%, #fac4b3 30%, #fab5a5 50%, #946051 100%);
   border-image-slice: 1;
   padding: 15px;
-  width: 75%;
+  width: 70%;
   height: auto;
   display: block;
   margin: 0 auto;
@@ -1259,7 +1293,7 @@ textarea.input100 {
   border-image-source: linear-gradient(to right, #914e3d 0%, #b27362 9%, #fac4b3 30%, #fab5a5 50%, #946051 100%);
   border-image-slice: 1;
   padding: 15px;
-  width: 75%;
+  width: 70%;
   height: auto;
   display: block;
   margin: 0 auto;
@@ -1314,7 +1348,7 @@ textarea.input100 {
   border-image-source: linear-gradient(to right, #914e3d 0%, #b27362 9%, #fac4b3 30%, #fab5a5 50%, #946051 100%);
   border-image-slice: 1;
   padding: 15px;
-  width: 75%;
+  width: 70%;
   height: auto;
   display: block;
   margin: 0 auto;
@@ -1364,7 +1398,7 @@ h2 span {
   border-image-source: linear-gradient(to right, #914e3d 0%, #b27362 9%, #fac4b3 30%, #fab5a5 50%, #946051 100%);
   border-image-slice: 1;
   padding: 15px;
-  width: 75%;
+  width: 70%;
   height: auto;
 }
 
@@ -1408,7 +1442,7 @@ h2 span {
   border-image-source: linear-gradient(to right, #914e3d 0%, #b27362 9%, #fac4b3 30%, #fab5a5 50%, #946051 100%);
   border-image-slice: 1;
   padding: 15px;
-  width: 75%;
+  width: 70%;
   height: auto;
 }
 
@@ -1462,7 +1496,7 @@ h2 span {
   border-image-source: linear-gradient(to right, #914e3d 0%, #b27362 9%, #fac4b3 30%, #fab5a5 50%, #946051 100%);
   border-image-slice: 1;
   padding: 15px;
-  width: 75%;
+  width: 70%;
   height: auto;
 }
 
@@ -1506,7 +1540,7 @@ h2 span {
   border-image-source: linear-gradient(to right, #914e3d 0%, #b27362 9%, #fac4b3 30%, #fab5a5 50%, #946051 100%);
   border-image-slice: 1;
   padding: 15px;
-  width: 75%;
+  width: 70%;
   height: auto;
 }
 
@@ -1552,7 +1586,7 @@ h2 span {
   border-image-source: linear-gradient(to right, #914e3d 0%, #b27362 9%, #fac4b3 30%, #fab5a5 50%, #946051 100%);
   border-image-slice: 1;
   padding: 15px;
-  width: 75%;
+  width: 70%;
   height: auto;
 }
 

@@ -5,17 +5,21 @@
 
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
 
+html {
+  font-size: 14px;
+}
+
 .navbar-transparent .logo-title {
   @include text-gradient;
   font-family: $primary-font;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
 }
 
 .navbar .logo-title {
   color: #1a0e32;
   font-family: $primary-font;
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
 }
 
 .title {
@@ -24,7 +28,15 @@
   font-size: 2.5rem;
   padding-bottom: 10px;
   text-align: center;
-  line-height: 3.3rem;
+  line-height: 3.7rem;
+
+  @media (min-width: 768px) {
+    font-size: 2.8rem;
+  }
+
+  @media (min-width: 1400px) {
+    font-size: 2.9rem;
+  }
 }
 
 .paragraph {
@@ -34,8 +46,12 @@
   font-weight: 400;
   text-align: center;
 
-  @media (min-width: 1400px) {
+  @media (min-width: 768px) {
     font-size: 1.1rem;
+  }
+
+  @media (min-width: 1400px) {
+    font-size: 1.2rem;
   }
 }
 
@@ -47,7 +63,7 @@
   line-height: 3.3rem;
 
   @media (min-width: 768px) {
-    font-size: 2rem;
+    font-size: 2.1rem;
   }
   @media (min-width: 1400px) {
     font-size: 2.2rem;
@@ -60,7 +76,11 @@
   color: #fff;
   margin: 0 auto;
 
-  @media (min-width: 1400px) {
+  @media (min-width: 768px) {
     font-size: 1.1rem;
+  }
+
+  @media (min-width: 1400px) {
+    font-size: 1.2rem;
   }
 }
