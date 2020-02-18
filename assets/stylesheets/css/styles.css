@@ -845,6 +845,10 @@ textarea.input100 {
 #wedding-banner .banner-inner {
   height: 90vh;
   margin-top: 10vh;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 #wedding-banner .title {
@@ -854,6 +858,12 @@ textarea.input100 {
 #wedding-banner .paragraph {
   width: 90%;
   margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  #wedding-banner .wedding-text-box {
+    padding: 4em 0;
+  }
 }
 
 @media (min-width: 768px) {
